@@ -150,7 +150,7 @@ nav a {
 
     margin: 120px auto;
     padding: 0 240px;
-    
+
     display: grid;
     text-align: center;
     justify-content: center;
@@ -163,7 +163,7 @@ nav a {
     grid-template-columns: repeat(4, 1fr);
 
     gap: 25px;
-    justify-content:space-between;
+    justify-content: space-between;
     margin: 40px 0;
 
 }
@@ -214,15 +214,145 @@ nav a {
     -webkit-text-fill-color: transparent;
 }
 
+.king {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 240px;
+    gap: 130px;
+}
+
+.king-photo img {
+    width: 100%;
+}
+
+.king-photo .tom {
+    width: 50%;
+    margin: 5px;
+}
+
+.king-text {
+
+    text-align: right;
+}
+
+.tom {
+    position: relative;
+    top: -100px;
+    left: -50px;
+}
+
+.face-cotainer {
+
+    max-width: 1440px;
+    padding: 0 240px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.face-p {
+    color: #0B0223;
+    font-size: 1rem;
+    font-weight: 400;
+
+
+}
+
+.face:hover {
+    border-radius: 50px;
+    background-color: #FFF;
+    border: 1px solid #FF42A5;
+    color: #FF42A5;
+    padding: 30px 20px;
+
+
+}
+
+.face img {
+    width: 60px;
+    height: 60px;
+    width: 100%;
+    height: 100%;
+}
+
+.face {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    width: 30px;
+
+    margin-right: 20px;
+
+}
+
+footer {
+    background-color: #0B0223;
+
+}
+
+
+.footer {
+
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+justify-content: center;
+   
+    
+}
+
+
+.ul li {
+    list-style: none;
+    font-size: 1rem;
+    font-weight: 600;
+
+}
+
+#ses {
+    color: white;
+}
+.icon{
+    display: flex;
+    gap:100px;
+    margin-top: 40px;
+    
+}
+.icon img{
+    width: 30px;
+}
+.ul {
+    display: flex;
+    gap: 60px;
+    align-items: center;
+
+
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+.small{
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 1rem;
+    font-weight: 500;
+}
 
 @media screen and (max-width:576px) {
-    
+
 
     header {
         padding: 10px;
     }
 
-   
+    main {}
 
     nav,
     .nav-bar {
@@ -245,25 +375,64 @@ nav a {
     .banner img {
         width: 100%;
     }
-    .video{
-        grid-template-columns: repeat(1,1fr);
-       
-        
+
+    .video {
+        grid-template-columns: repeat(1, 1fr);
     }
-    .video-container{
-        
-      
+
+    .video-container {
         align-items: center;
-    }  
-        
+    }
+
+    .king {
+        flex-direction: column;
+        padding: 0px 50px;
+        align-items: center;
+        margin-left: 50px;
+        gap: 70px;
+        margin-top: 0px;
+
+    }
+
+    .king-text {
+        text-align: center;
+
+    }
+
+    .king-text h2 {
+        margin-top: 0;
+    }
+
+    .face-cotainer {
+        grid-template-columns: repeat(3, 1fr);
+        padding: 0;
+        margin: 0 50px;
+        justify-content: space-between;
+
+
+    }
+
+    .face {
+        margin-right: 10px;
+    }
+     .footer{
+        text-align: center;
+     }
+     .icon{
+        gap:50px;
+     }
+     .ul{
+        gap:50px;
+     }
 
 }
+
+
 
 @media screen and (min-width:576px) and (max-width:990px) {
 
     header {
-        padding: 20px;
-
+        padding: 0 20px;
     }
 
     main {
@@ -283,20 +452,53 @@ nav a {
     }
 
     .banner-contant {
-        padding: 0 20px;
+        padding: 0 100px;
     }
 
     .banner img {
         width: 100%;
     }
-    .video{
-        grid-template-columns: repeat(2,1fr);
+
+    .video {
+        grid-template-columns: repeat(2, 1fr);
     }
-    .video-container{
+
+    .video-container {
         align-items: center;
-     padding: 0 20px;
-    }  
-        
+        padding: 0 100px;
+
+    }
+
+    .king-text {
+        text-align: center;
+    }
+
+    .king {
+        flex-direction: column;
+        padding: 0 100px;
+    }
+
+    .face-cotainer {
+        grid-template-columns: repeat(3, 1fr);
+        padding: 0;
+        margin: 0 50px;
+        justify-content: space-between;
+
+
+    }
+
+    .face {
+        margin-right: 10px;
+    }
+    .footer{
+        text-align: center;
+     }
+     .icon{
+        gap:50px;
+     }
+     .ul{
+        gap:50px;
+     }
 
 
 }
