@@ -1,0 +1,302 @@
+body {
+    font-family: 'Lato', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+    margin: 0;
+}
+
+header {
+
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+    padding: 45px 240px;
+}
+
+nav {
+
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+
+}
+
+.nav-h2 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #0B0223;
+
+}
+
+.G {
+    color: #FF42A5;
+}
+
+.nav-h2:hover {
+    transform: rotate(360deg);
+    transition: transform 1s;
+}
+
+nav li {
+    list-style: none;
+    margin: 0;
+}
+
+nav li :hover {
+    color: #FF42A5;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+.gamer {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+}
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    color: #3C354F;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.follow {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    border-radius: 8px;
+    background: rgba(11, 2, 35, 0.10);
+    padding: 18px 24px;
+}
+
+/*main {
+    max-width: 1440px;
+    margin: 50px auto;
+} */
+
+.banner {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url('images/Group 14.png');
+    background-repeat: no-repeat;
+    background-size: 50%;
+    padding: 0px 240px;
+
+}
+
+.like {
+    color: #0B0223;
+    font-size: 3rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+
+
+
+
+.goat {
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 6rem;
+    font-weight: 800;
+    margin: 0;
+}
+
+.banner-p {
+    color: #534C64;
+    font-size: 1.25rem;
+    font-weight: 500;
+
+}
+
+.button {
+    display: flex;
+    margin: 48px 0;
+    gap: 24px;
+    width: 100%;
+}
+
+.btn {
+    border: 0px solid;
+    border-radius: 48px;
+    padding: 21px 40px;
+
+    color: white;
+
+}
+
+.signin {
+    background-color: #FF42A5;
+}
+
+.rogeu {
+    background-color: #4EC5F7;
+}
+
+.banner img {
+    width: 50%;
+}
+
+.video-container {
+
+    margin: 120px auto;
+    padding: 0 240px;
+    
+    display: grid;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.video {
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 25px;
+    justify-content:space-between;
+    margin: 40px 0;
+
+}
+
+.video-contant {
+    width: 100%;
+}
+
+.video-contant img {
+    width: 100%;
+    min-width: 115px;
+    min-height: 200px;
+    margin: 5px;
+}
+
+.video-p {
+    color: #534C64;
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 0;
+}
+
+.video-h2 {
+    color: #0B0223;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+
+/*.video-contant img {
+    max-width: 342px;
+    max-height: 400px;
+}*/
+
+
+
+.video-contant-p {
+    color: #534C64;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.funny {
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+@media screen and (max-width:576px) {
+    
+
+    header {
+        padding: 10px;
+    }
+
+   
+
+    nav,
+    .nav-bar {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .banner {
+        flex-direction: column;
+        background-size: 100%;
+        max-width: 1440px;
+    }
+
+    .banner-contant {
+        padding: 0 10px;
+
+    }
+
+    .banner img {
+        width: 100%;
+    }
+    .video{
+        grid-template-columns: repeat(1,1fr);
+       
+        
+    }
+    .video-container{
+        
+      
+        align-items: center;
+    }  
+        
+
+}
+
+@media screen and (min-width:576px) and (max-width:990px) {
+
+    header {
+        padding: 20px;
+
+    }
+
+    main {
+        max-width: 1440px;
+
+    }
+
+    nav {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .banner {
+        flex-direction: column;
+        background-size: 100%;
+    }
+
+    .banner-contant {
+        padding: 0 20px;
+    }
+
+    .banner img {
+        width: 100%;
+    }
+    .video{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .video-container{
+        align-items: center;
+     padding: 0 20px;
+    }  
+        
+
+
+}
